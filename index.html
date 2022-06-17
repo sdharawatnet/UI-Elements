@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
+
+    <title>UI elements you should know!</title>
+  </head>
+  <body>
+    <div class="elements">
+      <!-- TAB BAR -->
+      <div class="grid-element">
+        <h4>TAB BAR</h4>
+        <div class="tabBar">
+          <button class="tabs" onclick="tabBarToggle(event,'TAB1')">
+            TAB1
+          </button>
+          <button class="tabs" onclick="tabBarToggle(event,'TAB2')">
+            TAB2
+          </button>
+          <button class="tabs" onclick="tabBarToggle(event,'TAB3')">
+            TAB3
+          </button>
+        </div>
+
+        <div id="TAB1" class="tabcontent">
+          <h3>TAB1</h3>
+        </div>
+        <div id="TAB2" class="tabcontent">
+          <h3>TAB2</h3>
+        </div>
+        <div id="TAB3" class="tabcontent">
+          <h3>TAB3</h3>
+        </div>
+      </div>
+      <!-- PROGRESS BAR -->
+      <div class="grid-element">
+        <h4>PROGRESS BAR</h4>
+        <div id="progressBar">
+          <div id="bar"></div>
+        </div>
+        <br />
+        <button onclick="move()" class="wrapProgress">WRAP</button>
+      </div>
+      <!-- BREADCRUMBS -->
+      <div class="grid-element">
+        <h4>BREADCRUMBS</h4>
+        <ul class="breadcrumb">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Main folder</a></li>
+          <li><a href="#">Sub folder</a></li>
+          <li>File</li>
+        </ul>
+      </div>
+      <!-- SLIDER -->
+      <div class="grid-element">
+        <h4>SLIDER</h4>
+        <div class="slideContainer">
+          <input
+            type="range"
+            min="10"
+            max="250"
+            value="30"
+            class="slider"
+            id="ranges"
+          />
+          <p class="sliderValue">
+            Took me <span id="sliderVal">___</span>
+            seconds to build this.
+          </p>
+        </div>
+      </div>
+
+      <!-- LOADER -->
+      <div class="grid-element">
+        <h4>LOADER</h4>
+        <div class="loader"></div>
+      </div>
+    </div>
+
+    <script src="elementsLogic.js"></script>
+  </body>
+</html>

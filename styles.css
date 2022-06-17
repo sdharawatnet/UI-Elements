@@ -1,0 +1,149 @@
+* {
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-color: #1a1a1d;
+}
+
+.elements {
+  display: grid;
+  grid-template-columns: auto auto ;
+  padding: 10px;
+}
+
+.grid-element{
+  padding: 20px;
+}
+
+h4 {
+  color: white;
+}
+
+.tabBar {
+  overflow: hidden;
+}
+
+.tabBar button {
+  background-color: inherit;
+  /* float: left; */
+  /* border: none; */
+  background-color: #6f2232;
+  font-weight: bold;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+.tabBar button:hover {
+  background-color: #c2073f;
+}
+
+.tabBar button.active {
+  background-color: #c2073f;
+}
+
+.tabcontent {
+  padding: 6px 12px;
+  margin-top: 10px;
+  display: none;
+  background-color: #e3e2df;
+  max-width: 180px;
+  text-align: center;
+}
+
+/* Progress bar */
+#progressBar {
+  width: 100%;
+  background-color: bisque;
+  max-width: 200px;
+}
+
+#bar {
+  width: 20px;
+  height: 20px;
+  background-color: #6f2232;
+}
+
+.wrapProgress {
+  background-color: #6f2232;
+  color: white;
+  transition: 0.5s;
+}
+
+.wrapProgress:hover {
+  background-color: #c2073f;
+  cursor: pointer;
+}
+
+/* Breadcrumbs */
+
+ul.breadcrumb {
+  padding: 8px 16px;
+  list-style: none;
+  background-color: #6f2232;
+  max-width: 350px;
+}
+
+ul.breadcrumb li {
+  display: inline;
+}
+ul.breadcrumb li + li:before {
+  padding: 8px;
+  color: black;
+  content: "/\00a0";
+}
+
+ul.breadcrumb li a {
+  color: wheat;
+}
+
+/* Slider */
+.slideContainer {
+  display: flex;
+  align-items: center;
+}
+.slider {
+  -webkit-appearance: none;
+  /* width: 100%; */
+  height: 25px;
+  background: #6f2232;
+  outline: none;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+}
+.slider:hover {
+  opacity: 1;
+}
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 12px;
+  background: wheat;
+  cursor: pointer;
+}
+.sliderValue {
+  padding-left: 10px;
+  color: white;
+}
+
+/* Loader */
+
+.loader {
+  border: 16px solid #6f2232;
+  border-top: 16px solid wheat;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(360deg);
+  }
+}
